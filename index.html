@@ -9,6 +9,9 @@
 <canvas></canvas>
 
 <script>
+  /* I made some mistakes when I change the Screen it goes through it
+  I will see what I can do */
+  
   const canvas = document.querySelector('canvas')
   const c = canvas.getContext('2d')
 
@@ -91,7 +94,7 @@
           }
       
       // reverse y directions
-      if (this.position.y + this.height + this.velocity.y >= canvas.width ||
+      if (this.position.y + this.height + this.velocity.y >= canvas.height ||
           this.position.y + this.velocity.y <= 0) {
             this.velocity.y = -this.velocity.y
           }
